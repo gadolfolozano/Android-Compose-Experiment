@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.ui.core.setContent
 import androidx.ui.foundation.AdapterList
 import androidx.ui.foundation.Text
@@ -14,14 +16,19 @@ import androidx.ui.tooling.preview.Preview
 import pe.gadolfolozano.composeexperiment.model.PlaceCategory
 
 class MainActivity : AppCompatActivity() {
+    lateinit var mainInteractor: MainInteractor
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val mainInteractor = MainInteractor(this)
+        mainInteractor = ViewModelProvider(this).get(MainInteractor::class.java)
         setContent {
             MaterialTheme {
                 Story("Android")
             }
         }
+        mainInteractor.placeCategoriesLiveData.observe(
+            this,
+            Observer { placeCategories -> updatePlaceCategories(placeCategories) })
         mainInteractor.fetchCategories()
     }
 

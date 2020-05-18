@@ -5,5 +5,25 @@ A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
-t
-Dapp/src/main/java/pe/gadolfolozano/composeexperiment/MainActivity.kt,8/9/8913fb08080c2c65f6592081f24357f8b1b0e540
+{
+Kapp/src/main/java/pe/gadolfolozano/composeexperiment/model/PlaceCategory.kt,b/3/b3331d06e36cd77abec68140df1a60316cf3edf1
+x
+Happ/src/main/java/pe/gadolfolozano/composeexperiment/domain/FlowState.kt,1/e/1e4c872ed7ce244db059d96663f6d94ff44d2722
+~
+Napp/src/main/java/pe/gadolfolozano/composeexperiment/ui/main/MainInteractor.kt,1/6/162f2eb3bf1191a6f79782496e247df973f000b5
+ä
+Zapp/src/main/java/pe/gadolfolozano/composeexperiment/domain/FetchPlaceCategoriesUseCase.kt,c/1/c19817145ddbfbfbc3d3902d06518f105cbc9eae
+|
+Lapp/src/main/java/pe/gadolfolozano/composeexperiment/ui/main/MainActivity.kt,7/2/725c8cd8c4d85ee2ab7d50ba8d6eaa3cc3890e40
+{
+Kapp/src/main/java/pe/gadolfolozano/composeexperiment/data/PlaceInterface.kt,2/6/26b3dcd7fe8b78d30bb729a1969295087bd94a49
+|
+Lapp/src/main/java/pe/gadolfolozano/composeexperiment/data/util/RemoteUtil.kt,0/7/0773e803cb5c3d90c316af7a9e1a82cdece6e573
+|
+Lapp/src/main/java/pe/gadolfolozano/composeexperiment/data/PlaceRepository.kt,d/e/dee93cf19d5eaaf6832698b98d4c353a2c1a82ad
+ñ
+fapp/src/main/java/pe/gadolfolozano/composeexperiment/data/entity/FetchPlaceCategoriesResponseEntity.kt,2/9/2920070e0ab001dc8cf9d37755dee8e9a832b1cf
+Å
+Qapp/src/main/java/pe/gadolfolozano/composeexperiment/data/util/ResponseWrapper.kt,5/c/5c79b99301fcf64cd9d3f1379877d036cdb7d211
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e

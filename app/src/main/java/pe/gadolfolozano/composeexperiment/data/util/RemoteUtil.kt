@@ -15,20 +15,21 @@ object RemoteUtil {
             .addInterceptor(interceptor)
             .addInterceptor { chain ->
                 val request = chain.request().newBuilder()
+                    .addHeader("user-key", "e7437e76decba6bf0c90b58f42b5d9b2")
                     .build()
                 chain.proceed(request)
             }
             .connectTimeout(40, TimeUnit.SECONDS)
             .readTimeout(60, TimeUnit.SECONDS)
             .writeTimeout(60, TimeUnit.SECONDS)
-            .cache(null).build()
-
+            .cache(null)
+            .build()
 
         return Retrofit.Builder()
             .baseUrl("https://developers.zomato.com/api/v2.1/")
+            .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .addConverterFactory(ScalarsConverterFactory.create())
-            .client(client)
             .build()
     }
 }

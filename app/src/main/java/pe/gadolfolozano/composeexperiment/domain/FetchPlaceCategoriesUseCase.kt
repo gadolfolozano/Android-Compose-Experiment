@@ -4,9 +4,9 @@ import pe.gadolfolozano.composeexperiment.data.PlaceRepository
 import pe.gadolfolozano.composeexperiment.model.PlaceCategory
 
 class FetchPlaceCategoriesUseCase {
-    fun execute(): FlowState<List<PlaceCategory>> {
+    suspend fun execute(): FlowState<List<PlaceCategory>> {
         val placeRepository = PlaceRepository()
-        val placeCategories = placeRepository.fetchCategories()
+        val placeCategories = placeRepository.fetchPlaceCategories()
 
         return FlowState.Success(placeCategories)
     }
